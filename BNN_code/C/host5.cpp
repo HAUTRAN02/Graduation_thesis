@@ -47,7 +47,7 @@ int main()
   /** Read the information of weights, bias, and data of the image into an array **/
   FILE *fp;
 
-  fp = fopen("C:/Users/Admins/Downloads/Seminar/BNN_code/data/weights/conv1.weight.txt", "r");
+  fp = fopen("C:/Users/Admins/Downloads/bnn/data/weights/conv1.weight.txt", "r");
   for (int j = 0; j < 6; j++)
   {
     for (int m = 0; m < 5; m++)
@@ -62,7 +62,7 @@ int main()
   }
   fclose(fp);
 
-  fp = fopen("C:/Users/Admins/Downloads/Seminar/BNN_code/data/weights/conv2.weight.txt", "r");
+  fp = fopen("C:/Users/Admins/Downloads/bnn/data/weights/conv2.weight.txt", "r");
   for (i = 0; i < 16; i++)
   {
     for (j = 0; j < 6; j++)
@@ -80,7 +80,7 @@ int main()
   }
   fclose(fp);
 
-  fp = fopen("C:/Users/Admins/Downloads/Seminar/BNN_code/data/weights/fc1.weight.txt", "r");
+  fp = fopen("C:/Users/Admins/Downloads/bnn/data/weights/fc1.weight.txt", "r");
   for (i = 0; i < 120; i++)
   {
     for (j = 0; j < 256; j++)
@@ -91,7 +91,7 @@ int main()
   }
   fclose(fp);
 
-  fp = fopen("C:/Users/Admins/Downloads/Seminar/BNN_code/data/weights/fc2.weight.txt", "r");
+  fp = fopen("C:/Users/Admins/Downloads/bnn/data/weights/fc2.weight.txt", "r");
   for (i = 0; i < 84; i++)
   {
     for (j = 0; j < 120; j++)
@@ -102,7 +102,7 @@ int main()
   }
   fclose(fp);
 
-  fp = fopen("C:/Users/Admins/Downloads/Seminar/BNN_code/data/weights/fc3.weight.txt", "r");
+  fp = fopen("C:/Users/Admins/Downloads/bnn/data/weights/fc3.weight.txt", "r");
   for (i = 0; i < 10; i++)
   {
     for (j = 0; j < 84; j++)
@@ -113,7 +113,7 @@ int main()
   }
   fclose(fp);
 
-  fp = fopen("C:/Users/Admins/Downloads/Seminar/BNN_code/data/weights/conv1.bias.txt", "r");
+  fp = fopen("C:/Users/Admins/Downloads/bnn/data/weights/conv1.bias.txt", "r");
   for (int i = 0; i < 6; i++)
   {
     fscanf(fp, "%f ", &(temp));
@@ -122,7 +122,7 @@ int main()
 
   fclose(fp);
 
-  fp = fopen("C:/Users/Admins/Downloads/Seminar/BNN_code/data/weights/conv2.bias.txt", "r");
+  fp = fopen("C:/Users/Admins/Downloads/bnn/data/weights/conv2.bias.txt", "r");
   for (i = 0; i < 16; i++)
   {
     fscanf(fp, "%f ", &(temp));
@@ -131,7 +131,7 @@ int main()
 
   fclose(fp);
 
-  fp = fopen("C:/Users/Admins/Downloads/Seminar/BNN_code/data/weights/fc1.bias.txt", "r");
+  fp = fopen("C:/Users/Admins/Downloads/bnn/data/weights/fc1.bias.txt", "r");
   for (i = 0; i < 120; i++)
   {
     fscanf(fp, "%f", &(temp));
@@ -139,7 +139,7 @@ int main()
   }
   fclose(fp);
 
-  fp = fopen("C:/Users/Admins/Downloads/Seminar/BNN_code/data/weights/fc2.bias.txt", "r");
+  fp = fopen("C:/Users/Admins/Downloads/bnn/data/weights/fc2.bias.txt", "r");
   for (i = 0; i < 84; i++)
   {
     fscanf(fp, "%f ", &(temp));
@@ -147,7 +147,7 @@ int main()
   }
   fclose(fp);
 
-  fp = fopen("C:/Users/Admins/Downloads/Seminar/BNN_code/data/weights/fc3.bias.txt", "r");
+  fp = fopen("C:/Users/Admins/Downloads/bnn/data/weights/fc3.bias.txt", "r");
   for (i = 0; i < 10; i++)
   {
     fscanf(fp, "%f ", &(temp));
@@ -158,12 +158,12 @@ int main()
 
   int target[LABEL_LEN];
 
-  fp = fopen("C:/Users/Admins/Downloads/Seminar/BNN_code/data/MNIST/mnist-test-target.txt", "r");
+  fp = fopen("C:/Users/Admins/Downloads/bnn/data/MNIST/mnist-test-target.txt", "r");
   for (i = 0; i < LABEL_LEN; i++)
     fscanf(fp, "%d ", &(target[i]));
   fclose(fp);
 
-  fp = fopen("C:/Users/Admins/Downloads/Seminar/BNN_code/data/MNIST/mnist-test-image.txt", "r");
+  fp = fopen("C:/Users/Admins/Downloads/bnn/data/MNIST/mnist-test-image.txt", "r");
   for (int i = 0; i < LABEL_LEN * 28 * 28; i++)
   {
 
